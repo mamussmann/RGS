@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Samples/SimulationSample/RootGrowthSimulation/EnvironmentSelection.unity
+    guid: edc98d367c0703a949b89eb0a76ca67d
+  - enabled: 1
+    path: Assets/Samples/SimulationSample/RootGrowthSimulation/SimulationField.unity
+    guid: 837b7f501122c99179e8446eb48d0d0e
+  - enabled: 1
+    path: Assets/Samples/SimulationSample/RootGrowthSimulation/SimulationPot.unity
+    guid: c7cbabd7a68d41a5db681d93b5a3799c
+  - enabled: 1
+    path: Assets/Samples/SimulationSample/RootGrowthSimulation/SimulationShowcase.unity
+    guid: 7eeba52eb39f7fa3abfb1c9d4c2a0725
+  m_configObjects: {}

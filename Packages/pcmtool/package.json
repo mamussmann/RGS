@@ -1,0 +1,20 @@
+{
+  "name": "com.mm.pcmtool",
+  "version": "0.0.1",
+  "displayName": "Point Cloud Modeling Tool",
+  "description": "The package provides an implementation of a data structure \nthat allows for dynamic point cloud modification.",
+  "unity": "2021.3",
+  "documentationUrl": "",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "dependencies": {
+    "com.unity.burst": "1.6.6",
+    "com.unity.mathematics": "1.2.1",
+    "com.unity.collections": "1.4.0"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Marc Mu\u00dfmann"
+  },
+  "type": "tool"
+}

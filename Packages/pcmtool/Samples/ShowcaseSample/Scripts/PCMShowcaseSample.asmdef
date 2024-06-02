@@ -1,0 +1,16 @@
+{
+    "name": "ShowcaseSample",
+    "rootNamespace": "",
+    "references": [
+        "GUID:57f580c1a0d085945b75e1e4f4ecae73"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

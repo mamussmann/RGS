@@ -1,0 +1,1546 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa2a857134fe336ba52c20ce6802c2a, type: 3}
+  m_Name: RootSGConfiguration
+  m_EditorClassIdentifier: 
+  WaterAgentConfig:
+    WaterOverlapCheckRadius: 0.02
+    WaterLossRadius: 0.075
+    WaterAgentNumberOfTries: 5
+    InitialVelocity: 0.5
+    Acceleration: 0.5
+    MaxVelocity: 0.5
+    PerceptionAngle: 25
+    DeltaPerceptionAngleDeg: 15
+    WaterLossPerTimeStep: 1
+    InitialWaterValue: 250
+  SegmentLength: 0.001
+  RootSGAgents:
+  - AgentType: 72
+    m_color: {r: 1, g: 0.35, b: 0, a: 1}
+    Radius: 0.0005
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules:
+    - ApplicationFrequency: 1
+      Output: I
+    PerceptionAngle: 90
+    InitialVelocity: 0.01
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.01
+    DisplayName: 'AnagallisFemina: primaryroot'
+    RootInsertionAngle:
+      Value: 0
+      StdDev: 0
+    RootBasalZoneLength:
+      Value: 0.01
+      StdDev: 0
+    RootInterBranchingDistance:
+      Value: 0.008
+      StdDev: 0
+    RootApicalZoneLength:
+      Value: 0.012
+      StdDev: 0
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 0.334
+      StdDev: 0.033
+    NumberOfTries: 10
+    DeltaPerceptionAngle: 10
+    GravitropismWeight: 1
+    GravitySetPointAngle: 0
+    HalotropismWeight: 1
+    ChemotropismWeight: 1
+    MagnetotropismWeight: 1
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0.2
+    PhonotropismWeight: 0.1
+    SeparationWeight: 0.25
+    GSAScalingByLengthFunction:
+      Slope: 0
+      MinimumLength: 0
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction: []
+    RootLengthScalingFunction: []
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.75
+      MaximumFactor: 1
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.0005
+    - ResourceType: 6
+      RequiredAmount: 0.0007
+    - ResourceType: 7
+      RequiredAmount: 0.0005
+  - AgentType: 73
+    m_color: {r: 0, g: 0.52, b: 1, a: 1}
+    Radius: 0.0003
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules:
+    - ApplicationFrequency: 1
+      Output: J
+    PerceptionAngle: 80
+    InitialVelocity: 0.001
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.02
+    DisplayName: 'AnagallisFemina: 1st order laterals'
+    RootInsertionAngle:
+      Value: 70
+      StdDev: 3
+    RootBasalZoneLength:
+      Value: 0.004
+      StdDev: 0.001
+    RootInterBranchingDistance:
+      Value: 0.005
+      StdDev: 0.001
+    RootApicalZoneLength:
+      Value: 0.008
+      StdDev: 0.002
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 0.077
+      StdDev: 0.02
+    NumberOfTries: 10
+    DeltaPerceptionAngle: 20
+    GravitropismWeight: 1
+    GravitySetPointAngle: 90
+    HalotropismWeight: 2
+    ChemotropismWeight: 2
+    MagnetotropismWeight: 0.25
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0.1
+    PhonotropismWeight: 0
+    SeparationWeight: 0.25
+    GSAScalingByLengthFunction:
+      Slope: 0
+      MinimumLength: 0
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction:
+    - EnvironmentPointType: 4
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.25
+      MaximumFactor: 1
+    - EnvironmentPointType: 3
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 2
+    - EnvironmentPointType: 5
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 2
+    - EnvironmentPointType: 7
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.25
+      MaximumFactor: 1
+    RootLengthScalingFunction:
+    - EnvironmentPointType: 4
+      Slope: 1
+      MinimumConcentration: 0.25
+      MinimumFactor: 1
+      MaximumFactor: 1.1
+    - EnvironmentPointType: 7
+      Slope: 1
+      MinimumConcentration: 0.25
+      MinimumFactor: 1
+      MaximumFactor: 1.1
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.25
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.25
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.25
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.25
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.0003
+    - ResourceType: 6
+      RequiredAmount: 0.0005
+    - ResourceType: 7
+      RequiredAmount: 0.0003
+  - AgentType: 74
+    m_color: {r: 1, g: 0, b: 0.09, a: 1}
+    Radius: 0.0002
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules:
+    - ApplicationFrequency: 1
+      Output: K
+    PerceptionAngle: 45
+    InitialVelocity: 0.002
+    MinimumVelocity: 0.002
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.02
+    DisplayName: 'AnagallisFemina: 2nd order laterals'
+    RootInsertionAngle:
+      Value: 68
+      StdDev: 3
+    RootBasalZoneLength:
+      Value: 0.001
+      StdDev: 0.0001
+    RootInterBranchingDistance:
+      Value: 0.0024
+      StdDev: 0
+    RootApicalZoneLength:
+      Value: 0.001
+      StdDev: 0.0001
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 0.0044
+      StdDev: 0.0004
+    NumberOfTries: 10
+    DeltaPerceptionAngle: 25
+    GravitropismWeight: 0.1
+    GravitySetPointAngle: 0
+    HalotropismWeight: 2
+    ChemotropismWeight: 2
+    MagnetotropismWeight: 0
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0
+    PhonotropismWeight: 0
+    SeparationWeight: 0.25
+    GSAScalingByLengthFunction:
+      Slope: 0
+      MinimumLength: 0
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction: []
+    RootLengthScalingFunction:
+    - EnvironmentPointType: 4
+      Slope: 2
+      MinimumConcentration: 0.25
+      MinimumFactor: 1
+      MaximumFactor: 4
+    - EnvironmentPointType: 7
+      Slope: 2
+      MinimumConcentration: 0.25
+      MinimumFactor: 1
+      MaximumFactor: 4
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.25
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.25
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.000001
+    - ResourceType: 7
+      RequiredAmount: 0.00001
+    - ResourceType: 6
+      RequiredAmount: 0.000001
+  - AgentType: 75
+    m_color: {r: 0, g: 1, b: 0.16, a: 1}
+    Radius: 0.0002
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules: []
+    PerceptionAngle: 18
+    InitialVelocity: 0.01
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.02
+    DisplayName: 'AnagallisFemina: 3rd order laterals'
+    RootInsertionAngle:
+      Value: 68
+      StdDev: 3
+    RootBasalZoneLength:
+      Value: 0
+      StdDev: 0
+    RootInterBranchingDistance:
+      Value: 0
+      StdDev: 0
+    RootApicalZoneLength:
+      Value: 0.004
+      StdDev: 0.0003
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 0.004
+      StdDev: 0.0004
+    NumberOfTries: 1
+    DeltaPerceptionAngle: 25
+    GravitropismWeight: 0
+    GravitySetPointAngle: 0
+    HalotropismWeight: 1
+    ChemotropismWeight: 1
+    MagnetotropismWeight: 0
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0
+    PhonotropismWeight: 0
+    SeparationWeight: 0
+    GSAScalingByLengthFunction:
+      Slope: 0
+      MinimumLength: 0
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction: []
+    RootLengthScalingFunction: []
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction: []
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.000001
+    - ResourceType: 7
+      RequiredAmount: 0.00001
+    - ResourceType: 6
+      RequiredAmount: 0.000001
+  - AgentType: 65
+    m_color: {r: 1, g: 0.49, b: 0.49, a: 1}
+    Radius: 0.00023
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules:
+    - ApplicationFrequency: 3
+      Output: B
+    - ApplicationFrequency: 7
+      Output: C
+    PerceptionAngle: 70
+    InitialVelocity: 0.01
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.01
+    DisplayName: 'Heliantus: taproot'
+    RootInsertionAngle:
+      Value: 0
+      StdDev: 0
+    RootBasalZoneLength:
+      Value: 0.01
+      StdDev: 0
+    RootInterBranchingDistance:
+      Value: 0.004
+      StdDev: 0.002
+    RootApicalZoneLength:
+      Value: 0.1
+      StdDev: 0
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 1.0146
+      StdDev: 0.101
+    NumberOfTries: 4
+    DeltaPerceptionAngle: 10
+    GravitropismWeight: 1
+    GravitySetPointAngle: 0
+    HalotropismWeight: 1
+    ChemotropismWeight: 1
+    MagnetotropismWeight: 1
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0.2
+    PhonotropismWeight: 0.1
+    SeparationWeight: 0.5
+    GSAScalingByLengthFunction:
+      Slope: 0
+      MinimumLength: 0
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction: []
+    RootLengthScalingFunction: []
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.0003
+    - ResourceType: 6
+      RequiredAmount: 0.0005
+    - ResourceType: 7
+      RequiredAmount: 0.0003
+  - AgentType: 66
+    m_color: {r: 0.45490196, g: 0.87058824, b: 0.63529414, a: 1}
+    Radius: 0.00023
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules:
+    - ApplicationFrequency: 1
+      Output: C
+    PerceptionAngle: 45
+    InitialVelocity: 0.01
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.02
+    DisplayName: 'Heliantus: 1st order lateral'
+    RootInsertionAngle:
+      Value: 74.48451
+      StdDev: 0
+    RootBasalZoneLength:
+      Value: 0
+      StdDev: 0
+    RootInterBranchingDistance:
+      Value: 0.004
+      StdDev: 0
+    RootApicalZoneLength:
+      Value: 0.05
+      StdDev: 0
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 0.15
+      StdDev: 0.015
+    NumberOfTries: 4
+    DeltaPerceptionAngle: 10
+    GravitropismWeight: 1
+    GravitySetPointAngle: 74.48451
+    HalotropismWeight: 2
+    ChemotropismWeight: 2
+    MagnetotropismWeight: 0.25
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0.5
+    PhonotropismWeight: 0
+    SeparationWeight: 0.25
+    GSAScalingByLengthFunction:
+      Slope: 0
+      MinimumLength: 0
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction:
+    - EnvironmentPointType: 4
+      Slope: -1.5
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.8
+      MaximumFactor: 1
+    - EnvironmentPointType: 7
+      Slope: -1.5
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.8
+      MaximumFactor: 1
+    - EnvironmentPointType: 3
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 1.5
+    - EnvironmentPointType: 5
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 1.5
+    RootLengthScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.0003
+    - ResourceType: 6
+      RequiredAmount: 0.0005
+    - ResourceType: 7
+      RequiredAmount: 0.0003
+  - AgentType: 67
+    m_color: {r: 0.4, g: 0.64705884, b: 0.9843137, a: 1}
+    Radius: 0.00008
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules: []
+    PerceptionAngle: 50
+    InitialVelocity: 0.01
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.02
+    DisplayName: 'Heliantus: 2nd order lateral'
+    RootInsertionAngle:
+      Value: 70
+      StdDev: 0
+    RootBasalZoneLength:
+      Value: 0
+      StdDev: 0
+    RootInterBranchingDistance:
+      Value: 0
+      StdDev: 0
+    RootApicalZoneLength:
+      Value: 0.1
+      StdDev: 0
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 0.1
+      StdDev: 0.01
+    NumberOfTries: 4
+    DeltaPerceptionAngle: 10
+    GravitropismWeight: 0
+    GravitySetPointAngle: 0
+    HalotropismWeight: 1
+    ChemotropismWeight: 1
+    MagnetotropismWeight: 0.25
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0.5
+    PhonotropismWeight: 0
+    SeparationWeight: 0.25
+    GSAScalingByLengthFunction:
+      Slope: 0
+      MinimumLength: 0
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction: []
+    RootLengthScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.25
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.25
+      MaximumFactor: 1
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction: []
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.0001
+    - ResourceType: 6
+      RequiredAmount: 0.0002
+    - ResourceType: 7
+      RequiredAmount: 0.0001
+  - AgentType: 68
+    m_color: {r: 1, g: 0, b: 1, a: 1}
+    Radius: 0.0015
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules:
+    - ApplicationFrequency: 1
+      Output: E
+    PerceptionAngle: 75
+    InitialVelocity: 0.01
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.01
+    DisplayName: 'Crypsis aculeata: type 0'
+    RootInsertionAngle:
+      Value: 0
+      StdDev: 0
+    RootBasalZoneLength:
+      Value: 0.066
+      StdDev: 0
+    RootInterBranchingDistance:
+      Value: 0.01
+      StdDev: 0
+    RootApicalZoneLength:
+      Value: 0.03
+      StdDev: 0
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 2
+      StdDev: 0.2
+    NumberOfTries: 10
+    DeltaPerceptionAngle: 10
+    GravitropismWeight: 1
+    GravitySetPointAngle: 0
+    HalotropismWeight: 1
+    ChemotropismWeight: 1
+    MagnetotropismWeight: 1
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0.25
+    PhonotropismWeight: 0.1
+    SeparationWeight: 1
+    GSAScalingByLengthFunction:
+      Slope: 0
+      MinimumLength: 0
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction:
+    - EnvironmentPointType: 4
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 7
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 3
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 1.5
+    - EnvironmentPointType: 5
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 1.5
+    RootLengthScalingFunction: []
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.0005
+    - ResourceType: 6
+      RequiredAmount: 0.0012
+    - ResourceType: 7
+      RequiredAmount: 0.0005
+  - AgentType: 69
+    m_color: {r: 0, g: 1, b: 0, a: 1}
+    Radius: 0.0005
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules:
+    - ApplicationFrequency: 1
+      Output: F
+    PerceptionAngle: 75
+    InitialVelocity: 0.01
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.02
+    DisplayName: 'Crypsis aculeata: type 1'
+    RootInsertionAngle:
+      Value: 90
+      StdDev: 0
+    RootBasalZoneLength:
+      Value: 0.03
+      StdDev: 0
+    RootInterBranchingDistance:
+      Value: 0.005
+      StdDev: 0
+    RootApicalZoneLength:
+      Value: 0
+      StdDev: 0
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 0.03
+      StdDev: 0.003
+    NumberOfTries: 4
+    DeltaPerceptionAngle: 10
+    GravitropismWeight: 0
+    GravitySetPointAngle: 0
+    HalotropismWeight: 2
+    ChemotropismWeight: 2
+    MagnetotropismWeight: 1
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0.5
+    PhonotropismWeight: 0
+    SeparationWeight: 0.25
+    GSAScalingByLengthFunction:
+      Slope: 0
+      MinimumLength: 0
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction:
+    - EnvironmentPointType: 4
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 7
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 3
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 1.5
+    - EnvironmentPointType: 5
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 1.5
+    RootLengthScalingFunction:
+    - EnvironmentPointType: 4
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 2
+    - EnvironmentPointType: 7
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 2
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.0003
+    - ResourceType: 6
+      RequiredAmount: 0.0007
+    - ResourceType: 7
+      RequiredAmount: 0.0003
+  - AgentType: 70
+    m_color: {r: 0, g: 0.7764706, b: 0.78039217, a: 1}
+    Radius: 0.0005
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules: []
+    PerceptionAngle: 75
+    InitialVelocity: 0.01
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.01
+    DisplayName: 'Crypsis aculeata: type 2'
+    RootInsertionAngle:
+      Value: 90
+      StdDev: 0
+    RootBasalZoneLength:
+      Value: 0.1
+      StdDev: 0
+    RootInterBranchingDistance:
+      Value: 0
+      StdDev: 0
+    RootApicalZoneLength:
+      Value: 0
+      StdDev: 0
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 0.008
+      StdDev: 0.0008
+    NumberOfTries: 4
+    DeltaPerceptionAngle: 10
+    GravitropismWeight: 0
+    GravitySetPointAngle: 0
+    HalotropismWeight: 1
+    ChemotropismWeight: 1
+    MagnetotropismWeight: 1
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0.1
+    PhonotropismWeight: 0
+    SeparationWeight: 0.25
+    GSAScalingByLengthFunction:
+      Slope: 0
+      MinimumLength: 0
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction: []
+    RootLengthScalingFunction:
+    - EnvironmentPointType: 4
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 2
+    - EnvironmentPointType: 7
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 2
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction: []
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.0003
+    - ResourceType: 6
+      RequiredAmount: 0.0007
+    - ResourceType: 7
+      RequiredAmount: 0.0003
+  - AgentType: 71
+    m_color: {r: 0, g: 0, b: 1, a: 1}
+    Radius: 0.0015
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules:
+    - ApplicationFrequency: 1
+      Output: E
+    PerceptionAngle: 65
+    InitialVelocity: 0.01
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.02
+    DisplayName: 'Crypsis aculeata: basalroot'
+    RootInsertionAngle:
+      Value: 60
+      StdDev: 0
+    RootBasalZoneLength:
+      Value: 0.066
+      StdDev: 0
+    RootInterBranchingDistance:
+      Value: 0.01
+      StdDev: 0
+    RootApicalZoneLength:
+      Value: 0.03
+      StdDev: 0
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 2
+      StdDev: 0.2
+    NumberOfTries: 10
+    DeltaPerceptionAngle: 10
+    GravitropismWeight: 0.5
+    GravitySetPointAngle: 60
+    HalotropismWeight: 1
+    ChemotropismWeight: 1
+    MagnetotropismWeight: 1
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0.25
+    PhonotropismWeight: 0.1
+    SeparationWeight: 1
+    GSAScalingByLengthFunction:
+      Slope: -2
+      MinimumLength: 0.1
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction:
+    - EnvironmentPointType: 4
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 7
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 3
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 2
+    - EnvironmentPointType: 5
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 2
+    RootLengthScalingFunction: []
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.0005
+    - ResourceType: 6
+      RequiredAmount: 0.0012
+    - ResourceType: 7
+      RequiredAmount: 0.0005
+  - AgentType: 76
+    m_color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    Radius: 0.0015
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules:
+    - ApplicationFrequency: 1
+      Output: E
+    PerceptionAngle: 65
+    InitialVelocity: 0.01
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.01
+    DisplayName: 'Crypsis aculeata: shootbornroot'
+    RootInsertionAngle:
+      Value: 75
+      StdDev: 0
+    RootBasalZoneLength:
+      Value: 0.066
+      StdDev: 0
+    RootInterBranchingDistance:
+      Value: 0.01
+      StdDev: 0
+    RootApicalZoneLength:
+      Value: 0.12
+      StdDev: 0
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 2.006
+      StdDev: 0.2
+    NumberOfTries: 10
+    DeltaPerceptionAngle: 10
+    GravitropismWeight: 0.5
+    GravitySetPointAngle: 75
+    HalotropismWeight: 1
+    ChemotropismWeight: 1
+    MagnetotropismWeight: 1
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0.25
+    PhonotropismWeight: 0.1
+    SeparationWeight: 1
+    GSAScalingByLengthFunction:
+      Slope: -2
+      MinimumLength: 0.2
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction:
+    - EnvironmentPointType: 4
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 7
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 3
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 2
+    - EnvironmentPointType: 5
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 2
+    RootLengthScalingFunction: []
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.0005
+    - ResourceType: 6
+      RequiredAmount: 0.0012
+    - ResourceType: 7
+      RequiredAmount: 0.0005
+  - AgentType: 77
+    m_color: {r: 1, g: 0, b: 0, a: 1}
+    Radius: 0.002
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules:
+    - ApplicationFrequency: 1
+      Output: N
+    - ApplicationFrequency: 1
+      Output: O
+    PerceptionAngle: 40
+    InitialVelocity: 0.01
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.01
+    DisplayName: 'Zea mays 3: taproot'
+    RootInsertionAngle:
+      Value: 63.82979
+      StdDev: 6.300015
+    RootBasalZoneLength:
+      Value: 0.02
+      StdDev: 0
+    RootInterBranchingDistance:
+      Value: 0.005
+      StdDev: 0.00005
+    RootApicalZoneLength:
+      Value: 0.08
+      StdDev: 0
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 1.59
+      StdDev: 0.159
+    NumberOfTries: 4
+    DeltaPerceptionAngle: 10
+    GravitropismWeight: 1
+    GravitySetPointAngle: 0
+    HalotropismWeight: 1
+    ChemotropismWeight: 1
+    MagnetotropismWeight: 1
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0.25
+    PhonotropismWeight: 0.1
+    SeparationWeight: 0.25
+    GSAScalingByLengthFunction:
+      Slope: 0
+      MinimumLength: 0
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction:
+    - EnvironmentPointType: 4
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 7
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 3
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 1.5
+    - EnvironmentPointType: 5
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 1.5
+    RootLengthScalingFunction: []
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.0005
+    - ResourceType: 6
+      RequiredAmount: 0.0012
+    - ResourceType: 7
+      RequiredAmount: 0.0005
+  - AgentType: 78
+    m_color: {r: 1, g: 1, b: 0, a: 1}
+    Radius: 0.000125
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules: []
+    PerceptionAngle: 60
+    InitialVelocity: 0.01
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.02
+    DisplayName: 'Zea mays 3: lateral1'
+    RootInsertionAngle:
+      Value: 69.99997
+      StdDev: 0
+    RootBasalZoneLength:
+      Value: 0
+      StdDev: 0
+    RootInterBranchingDistance:
+      Value: 0
+      StdDev: 0
+    RootApicalZoneLength:
+      Value: 0.0176
+      StdDev: 0
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 0.0176
+      StdDev: 0
+    NumberOfTries: 4
+    DeltaPerceptionAngle: 10
+    GravitropismWeight: 1
+    GravitySetPointAngle: 69.99997
+    HalotropismWeight: 2
+    ChemotropismWeight: 2
+    MagnetotropismWeight: 1
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0.25
+    PhonotropismWeight: 0
+    SeparationWeight: 0.25
+    GSAScalingByLengthFunction:
+      Slope: 0
+      MinimumLength: 0
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction:
+    - EnvironmentPointType: 4
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 7
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 3
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 1.5
+    - EnvironmentPointType: 5
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 1.5
+    RootLengthScalingFunction:
+    - EnvironmentPointType: 4
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 2
+    - EnvironmentPointType: 7
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 2
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.0003
+    - ResourceType: 6
+      RequiredAmount: 0.0007
+    - ResourceType: 7
+      RequiredAmount: 0.0003
+  - AgentType: 79
+    m_color: {r: 0.5295677, g: 0, b: 1, a: 1}
+    Radius: 0.0002
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules: []
+    PerceptionAngle: 60
+    InitialVelocity: 0.01
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.02
+    DisplayName: 'Zea mays 3: lateral2'
+    RootInsertionAngle:
+      Value: 69.99997
+      StdDev: 0
+    RootBasalZoneLength:
+      Value: 0
+      StdDev: 0
+    RootInterBranchingDistance:
+      Value: 0
+      StdDev: 0
+    RootApicalZoneLength:
+      Value: 0.0601
+      StdDev: 0
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 0.0176
+      StdDev: 0
+    NumberOfTries: 4
+    DeltaPerceptionAngle: 10
+    GravitropismWeight: 1
+    GravitySetPointAngle: 69.99997
+    HalotropismWeight: 2
+    ChemotropismWeight: 2
+    MagnetotropismWeight: 1
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0.25
+    PhonotropismWeight: 0
+    SeparationWeight: 0.25
+    GSAScalingByLengthFunction:
+      Slope: 0
+      MinimumLength: 0
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction: []
+    RootLengthScalingFunction:
+    - EnvironmentPointType: 4
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 2
+    - EnvironmentPointType: 7
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 2
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction: []
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.0002
+    - ResourceType: 6
+      RequiredAmount: 0.0006
+    - ResourceType: 7
+      RequiredAmount: 0.0002
+  - AgentType: 80
+    m_color: {r: 0.4392157, g: 0.84705883, b: 0.972549, a: 1}
+    Radius: 0.002
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules:
+    - ApplicationFrequency: 1
+      Output: N
+    - ApplicationFrequency: 1
+      Output: O
+    PerceptionAngle: 40
+    InitialVelocity: 0.01
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.02
+    DisplayName: 'Zea mays 3: nodalroot'
+    RootInsertionAngle:
+      Value: 90
+      StdDev: 9
+    RootBasalZoneLength:
+      Value: 0.02
+      StdDev: 0
+    RootInterBranchingDistance:
+      Value: 0.01
+      StdDev: 0.001
+    RootApicalZoneLength:
+      Value: 0.08
+      StdDev: 0
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 1.59
+      StdDev: 0.159
+    NumberOfTries: 4
+    DeltaPerceptionAngle: 10
+    GravitropismWeight: 1
+    GravitySetPointAngle: 90
+    HalotropismWeight: 2
+    ChemotropismWeight: 2
+    MagnetotropismWeight: 1
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0.25
+    PhonotropismWeight: 0.1
+    SeparationWeight: 0.25
+    GSAScalingByLengthFunction:
+      Slope: -1
+      MinimumLength: 0.1
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 1.5
+    - EnvironmentPointType: 5
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 1.5
+    - EnvironmentPointType: 4
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 7
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    RootLengthScalingFunction: []
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.0005
+    - ResourceType: 6
+      RequiredAmount: 0.0012
+    - ResourceType: 7
+      RequiredAmount: 0.0005
+  - AgentType: 81
+    m_color: {r: 0.96862745, g: 0.4509804, b: 0.94509804, a: 1}
+    Radius: 0.002
+    SoundDetectionRadius: 0.5
+    RootLifeTime:
+      Value: 1e+9
+      StdDev: 0
+    BranchingProbability: 1
+    ProductionRules:
+    - ApplicationFrequency: 1
+      Output: N
+    - ApplicationFrequency: 1
+      Output: O
+    PerceptionAngle: 40
+    InitialVelocity: 0.01
+    MinimumVelocity: 0.001
+    MaximumVelocity: 0.01
+    MaximumAcceleration: 0.02
+    DisplayName: 'Zea mays 3: shootborneroot'
+    RootInsertionAngle:
+      Value: 63.82979
+      StdDev: 6.300015
+    RootBasalZoneLength:
+      Value: 0.02
+      StdDev: 0
+    RootInterBranchingDistance:
+      Value: 0.005
+      StdDev: 0.00001
+    RootApicalZoneLength:
+      Value: 0.08
+      StdDev: 0
+    UseMaxLength: 1
+    MaximumRootLength:
+      Value: 0.5905
+      StdDev: 0.059
+    NumberOfTries: 4
+    DeltaPerceptionAngle: 10
+    GravitropismWeight: 1
+    GravitySetPointAngle: 60
+    HalotropismWeight: 2
+    ChemotropismWeight: 2
+    MagnetotropismWeight: 1
+    ThigmotropismWeight: 1
+    HydrotropismWeight: 0.25
+    PhonotropismWeight: 0.1
+    SeparationWeight: 0.25
+    GSAScalingByLengthFunction:
+      Slope: -1
+      MinimumLength: 0.25
+      MinimumFactor: 0
+      MaximumFactor: 1
+    BranchingDensityScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 1.5
+    - EnvironmentPointType: 5
+      Slope: 1
+      MinimumConcentration: 0.1
+      MinimumFactor: 1
+      MaximumFactor: 1.5
+    - EnvironmentPointType: 4
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 7
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    RootLengthScalingFunction: []
+    InsertionAngleScalingFunction: []
+    BranchingProbabilityScalingFunction:
+    - EnvironmentPointType: 3
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    - EnvironmentPointType: 5
+      Slope: -1
+      MinimumConcentration: 0.1
+      MinimumFactor: 0.5
+      MaximumFactor: 1
+    ElongationRateScalingFunction: []
+    GravitropismScalingFunction: []
+    GSAScalingFunction: []
+    RequiredResources:
+    - ResourceType: 4
+      RequiredAmount: 0.0005
+    - ResourceType: 6
+      RequiredAmount: 0.0012
+    - ResourceType: 7
+      RequiredAmount: 0.0005

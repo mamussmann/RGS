@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad67206595b91d555981804e59bd7f52, type: 3}
+  m_Name: SimpleClayPotShape1
+  m_EditorClassIdentifier: 
+  m_baseHeight: 0.15
+  m_baseRadius: 0.08
+  m_innerRadiusFraction: 0.02
+  m_heightDetail: 150
+  m_soilWidthDetail: 50
+  m_soilHeightDetail: 140
+  m_circleDetail: 270
+  m_depth: 2
+  m_pointSize: 0.003
+  m_clayColor: {r: 0.6509804, g: 0.4, b: 0.30588236, a: 1}
+  m_soilColor: {r: 0.34901962, g: 0.26666668, b: 0.22352941, a: 1}
+  m_animCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1.4527937
+      outSlope: 1.4527937
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.12889591
+      value: 0.4289541
+      inSlope: 0.73126453
+      outSlope: 0.73126453
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.20857273
+      value: 0.5836492
+      inSlope: 1.0503482
+      outSlope: 1.0503482
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.362142
+      outWeight: 0.28148133
+    - serializedVersion: 3
+      time: 0.299618
+      value: 0.6133688
+      inSlope: 0.13639472
+      outSlope: 0.13639472
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.6981599
+      outWeight: 0.31276676
+    - serializedVersion: 3
+      time: 0.7635764
+      value: 0.723306
+      inSlope: 0.2564095
+      outSlope: 0.2564095
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.7836875
+      value: 0.7653302
+      inSlope: -0.0058802958
+      outSlope: -0.0058802958
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.9919875
+      value: 0.76676893
+      inSlope: -0.00308983
+      outSlope: -0.00308983
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.7451061
+      inSlope: -2.7036383
+      outSlope: -2.7036383
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

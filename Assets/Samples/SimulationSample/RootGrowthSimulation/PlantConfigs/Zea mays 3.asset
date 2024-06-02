@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe55d98e084ebdcda9d28adb892f5b29, type: 3}
+  m_Name: Zea mays 3
+  m_EditorClassIdentifier: 
+  PlantName: Zea mays
+  Axiom: MQQQQQQQQQQQQQQPPPPPPPPPP
+  SeedNutrients:
+  - PointTypeIndex: 4
+    InitialValue: 10
+  - PointTypeIndex: 6
+    InitialValue: 15
+  - PointTypeIndex: 7
+    InitialValue: 10
+  RequiredNutrients:
+  - PointTypeIndex: 4
+    NutrientDisplayName: P
+    PlantMinValue: 0.1
+    CapacityPerSegment: 0.001
+  - PointTypeIndex: 6
+    NutrientDisplayName: C
+    PlantMinValue: 0.1
+    CapacityPerSegment: 0.001
+  - PointTypeIndex: 7
+    NutrientDisplayName: Fe
+    PlantMinValue: 0.1
+    CapacityPerSegment: 0.001
+  ShootNutrientModel:
+  - PointTypeIndex: 6
+    ValuePerTimeStep: 0.5
+  - PointTypeIndex: 4
+    ValuePerTimeStep: -0.0001
+  - PointTypeIndex: 7
+    ValuePerTimeStep: -0.0001
